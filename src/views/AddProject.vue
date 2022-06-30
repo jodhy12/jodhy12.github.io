@@ -23,7 +23,7 @@ export default {
                 details : this.details,
                 complete : false
             }
-            fetch('http://localhost:3000/projects', {
+            fetch('https://62bd66d0c5ad14c110bdc696.mockapi.io/projects', {
                 method : 'POST',
                 headers : { 'Content-Type' : 'application/json' },
                 body : JSON.stringify(project)

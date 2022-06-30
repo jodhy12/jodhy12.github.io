@@ -25,7 +25,7 @@ export default {
   },
 
   mounted(){
-    fetch('http://localhost:3000/projects')
+    fetch('https://62bd66d0c5ad14c110bdc696.mockapi.io/projects')
     .then(res => res.json())
     .then(data => this.projects = data)
     .catch(err => console.log(err.message))

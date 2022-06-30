@@ -15,7 +15,7 @@ export default {
         return{
             title : '',
             details : '',
-            url: 'http://localhost:3000/projects/' + this.id
+            url: 'https://62bd66d0c5ad14c110bdc696.mockapi.io/projects/' + this.id
         }
     },
     mounted(){

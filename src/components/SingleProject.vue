@@ -23,7 +23,7 @@ export default {
     data(){
         return{
             showDetails : false,
-            url : 'http://localhost:3000/projects/' + this.project.id
+            url : 'https://62bd66d0c5ad14c110bdc696.mockapi.io/projects/' + this.project.id
         }
     },
     methods: {
@@ -37,7 +37,7 @@ export default {
         },
         toggleComplete(){
             fetch(this.url, {
-                method: 'PATCH',
+                method: 'PUT',
                 headers: { 'Content-Type' : 'application/json'},
                 body: JSON.stringify({ complete : !this.project.complete })
             }).then(() => this.$emit('complete', this.project.id))
